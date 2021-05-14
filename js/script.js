@@ -31,7 +31,7 @@ $(document).ready(function () {
     })
 })
 
-
+//swiper
 const program_swiper = new Swiper('.program_swiper', {
     // Optional parameters
     direction: 'horizontal',
@@ -40,12 +40,34 @@ const program_swiper = new Swiper('.program_swiper', {
     slidesPerView: 'auto',
     spaceBetween: 32,
     initialSlide: 1,
+    grabCursor: true,
     pagination: {
         el: '.swiper-pagination',
     },
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
+    },
+});
+
+//swiper2
+const news__swiper = new Swiper('.news__swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    freeMode: false,
+    slidesPerView: 'auto',
+    spaceBetween: 24,
+    effect: 'coverflow',
+    initialSlide: 1,
+    centeredSlides: true,
+    grabCursor: true,
+    pagination: {
+        el: '.swiper-pagination',
+    },
+    navigation: {
+        nextEl: '.news_next',
+        prevEl: '.news_prev',
     },
 });
 
@@ -115,100 +137,6 @@ slider2.addEventListener("input", function () {
     var color = 'linear-gradient(90deg, rgb(5, 178, 205)' + valueWidth + '%, rgb(199, 199, 204)' + valueWidth + '%)';
     slider2.style.background = color;
 });
-
-
-// let range1Element = $('#range1')
-// let range1Value = $('#range1Value')
-// let range2Element = $('#range2')
-// let range2Value = $('#range2Value')
-// let range3Element = $('#range3')
-// let range3Value = $('#range3Value')
-// let range4Element = $('#range4')
-// let range4Value = $('#range4Value')
-// let range5Element = $('#range5')
-// let range5Value = $('#range5Value')
-// let range6Element = $('#range6')
-// let range6Value = $('#range6Value')
-
-// $(document).ready(function () {
-//     $('#range1').rangeslider({
-//         polyfill: false,
-
-//         onInit: function () {
-//             $('#range1Value').html(range1Element.attr('value'));
-//         },
-
-//         onSlide: function (position, value) {
-//             range1Value.html(value);
-//         }
-//     });
-
-//     $('#range2').rangeslider({
-//         polyfill: false,
-
-//         onInit: function () {
-//             $('#range2Value').html(range2Element.attr('value'));
-//         },
-
-//         onSlide: function (position, value) {
-//             range2Value.html(value);
-//         }
-//     });
-
-
-//     $('#range3').rangeslider({
-//         polyfill: false,
-
-//         onInit: function () {
-//             $('#range3Value').html(range3Element.attr('value'));
-//         },
-
-//         onSlide: function (position, value) {
-//             range3Value.html(value);
-//         }
-//     });
-
-//     $('#range4').rangeslider({
-//         polyfill: false,
-
-//         onInit: function () {
-//             $('#range4Value').html(range4Element.attr('value'));
-//         },
-
-//         onSlide: function (position, value) {
-//             range4Value.html(value);
-//         }
-//     });
-
-//     $('#range5').rangeslider({
-//         polyfill: false,
-
-//         onInit: function () {
-//             $('#range5Value').html(range5Element.attr('value'));
-//         },
-
-//         onSlide: function (position, value) {
-//             range5Value.html(value);
-//         }
-//     });
-
-//     $('#range6').rangeslider({
-//         polyfill: false,
-
-//         onInit: function () {
-//             $('#range6Value').html(range6Element.attr('value'));
-//         },
-
-//         onSlide: function (position, value) {
-//             range6Value.html(value);
-//         }
-//     });
-
-//     $(window).trigger('resize');
-
-
-// });
-
 
 
 //mask

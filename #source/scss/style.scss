@@ -933,7 +933,7 @@ h6 {
     font-size: 34px;
   }
   @media (max-width: 500px) {
-    font-size: 24px;
+    font-size: 28px;
   }
 }
 
@@ -2030,4 +2030,278 @@ footer {
       }
     }
   }
+}
+
+.single__news {
+  padding: 104px 0px 80px 0px;
+  background-color: var(--light-beige);
+  @media (max-width: 768px) {
+    padding: 104px 0px 40px 0px;
+  }
+  .programs__title {
+    margin: 0px 0px 35px 130px;
+    @media (max-width: 768px) {
+      margin: 0px 0px 23px 0px;
+    }
+  }
+}
+
+.single_news_slider {
+  margin: 0px 0px 0px 0px;
+}
+.news__swiper {
+  .swiper-slide {
+    max-width: 474px;
+    max-height: 408px;
+    position: relative;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      min-height: 408px;
+      @media (max-width: 768px) {
+        min-height: 300px;
+        max-height: 300px;
+      }
+    }
+  }
+  &:before {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 12%;
+    height: 100%;
+    position: absolute;
+    box-shadow: 64px 0px 40px -13px var(--light-beige) inset;
+    z-index: 2;
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+  &:after {
+    content: "";
+    top: 0;
+    right: 0;
+    width: 12%;
+    height: 100%;
+    position: absolute;
+    box-shadow: -93px 0px 36px -29px var(--light-beige) inset;
+    z-index: 2;
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+}
+
+.news_text_btn {
+  margin: 0px auto 0px auto;
+  max-width: 772px;
+}
+.single_news_text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 140%;
+  color: var(--black);
+
+  display: block;
+  margin: 40px 0px 40px 0px;
+  @media (max-width: 500px) {
+    font-size: 19px;
+    margin: 16px 0px 20px 0px;
+  }
+}
+
+.back__btn {
+  display: block;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: -0.154px;
+  color: #1f1f1f;
+  padding: 13px 20px;
+  border: 1px solid #8e8e93;
+  width: 100%;
+  max-width: 190px;
+  transition: all ease 0.3s;
+  &:hover {
+    box-shadow: 0px 0px 9px -1px #000000a6;
+  }
+}
+
+.bread_crumps {
+  margin: 0px 0px 34px 0px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  &.single {
+    margin: 0px 0px 34px 130px;
+    @media (max-width: 768px) {
+      margin: 0px 0px 16px 0px;
+    }
+  }
+  .bread_item {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #636366;
+    margin: 0px 0px 0px 0px;
+    position: relative;
+    display: inline-block;
+    width: fit-content;
+    span {
+      margin: 0px 5px;
+    }
+  }
+}
+
+.news_next {
+  svg {
+    transform: rotate(180deg);
+  }
+}
+.news_prev,
+.news_next {
+  display: block;
+  width: 56px;
+  height: 56px;
+  position: absolute;
+  bottom: 40%;
+  @media (max-width: 500px) {
+    display: none;
+  }
+  svg {
+    &::after {
+    }
+  }
+}
+.news_next {
+  right: 0px;
+  left: unset;
+}
+
+//vote
+
+.vote {
+  background: url(../img/push_apply/background.jpg) no-repeat;
+  background-size: 100% 100%;
+  padding: 40px 0px;
+}
+.vote__body {
+  display: flex;
+  justify-content: space-between;
+  max-width: 917px;
+  background: var(--white);
+  border-radius: 8px;
+  padding: 55px 55px;
+  margin: 0 auto;
+}
+.vote__body__left {
+  border-right: 1px solid #e5e5ea;
+  .radio_block {
+    margin: 24px 0px 40px 0px;
+  }
+  .title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 110%;
+    color: var(--black);
+    max-width: 378px;
+    margin: 0px 0px 0px 0px;
+  }
+  .btns {
+    .answer {
+      padding: 13px 13px;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 18px;
+      text-align: center;
+      letter-spacing: -0.154px;
+      color: var(--white);
+      background: var(--blue);
+      transition: all ease 0.3s;
+      width: 100%;
+      max-width: 190px;
+      &:hover {
+        background: var(--blue-hov);
+      }
+    }
+    .result {
+      color: var(--blue);
+      background-color: unset;
+    }
+  }
+}
+//custom radio
+
+.radio-label {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin: 0px 0px 20px 0px;
+}
+
+/* Hide the browser's default radio button */
+.radio-label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 24px;
+  width: 24px;
+  background-color: var(--white);
+  border-radius: 50%;
+  border: 1px solid #c7c7cc;
+  transition: all ease 0.3s;
+}
+
+/* On mouse-over, add a grey background color */
+.radio-label:hover input ~ .checkmark {
+  background-color: rgb(218, 218, 218);
+}
+
+/* When the radio button is checked, add a blue background */
+.radio-label input:checked ~ .checkmark {
+  background-color: white;
+  border: 2px solid #05b4cd;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radio-label input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.radio-label .checkmark:after {
+  top: 4px;
+  left: 4px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #05b4cd;
 }
