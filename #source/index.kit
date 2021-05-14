@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QazHome</title>
+    <link rel="shortcut icon" href="img/header-logo.svg" />
+    <link rel="stylesheet" href="lips/fontawesome/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/styles.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="preloader">
+      <div class="preloader__row">
+        <div class="preloader__item"></div>
+        <div class="preloader__item"></div>
+      </div>
+    </div>
+    <div class="request-call">
+      <div class="a" href="">
+        <p class="text">Заказать звонок</p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="140"
+          height="140"
+          viewBox="0 0 140 140"
+          fill="none"
+        >
+          <g filter="url(#filter0_d)">
+            <circle cx="70" cy="68" r="60" fill="#48BF37" />
+          </g>
+          <path
+            d="M72.3333 58.6667C74.1898 58.6667 75.9703 59.4042 77.2831 60.7169C78.5958 62.0297 79.3333 63.8102 79.3333 65.6667C79.3333 66.2855 79.5792 66.879 80.0167 67.3166C80.4543 67.7542 81.0478 68 81.6667 68C82.2855 68 82.879 67.7542 83.3166 67.3166C83.7542 66.879 84 66.2855 84 65.6667C84 62.5725 82.7708 59.605 80.5829 57.4171C78.395 55.2292 75.4275 54 72.3333 54C71.7145 54 71.121 54.2458 70.6834 54.6834C70.2458 55.121 70 55.7145 70 56.3333C70 56.9522 70.2458 57.5457 70.6834 57.9832C71.121 58.4208 71.7145 58.6667 72.3333 58.6667Z"
+            fill="white"
+          />
+          <path
+            d="M72.3333 49.3334C76.6652 49.3334 80.8196 51.0542 83.8827 54.1173C86.9458 57.1804 88.6666 61.3349 88.6666 65.6667C88.6666 66.2856 88.9125 66.8791 89.35 67.3167C89.7876 67.7542 90.3811 68.0001 91 68.0001C91.6188 68.0001 92.2123 67.7542 92.6499 67.3167C93.0875 66.8791 93.3333 66.2856 93.3333 65.6667C93.3333 60.0972 91.1208 54.7558 87.1825 50.8175C83.2443 46.8792 77.9028 44.6667 72.3333 44.6667C71.7145 44.6667 71.121 44.9126 70.6834 45.3502C70.2458 45.7878 70 46.3812 70 47.0001C70 47.6189 70.2458 48.2124 70.6834 48.65C71.121 49.0876 71.7145 49.3334 72.3333 49.3334ZM92.75 77.1234C92.6216 76.7488 92.4001 76.4131 92.1062 76.1477C91.8123 75.8824 91.4557 75.6962 91.07 75.6068L77.07 72.4101C76.6899 72.3239 76.2944 72.3343 75.9194 72.4403C75.5445 72.5462 75.202 72.7444 74.9233 73.0167C74.5966 73.3201 74.5733 73.3434 73.0566 76.2367C68.0241 73.9178 63.9916 69.8687 61.6933 64.8267C64.6566 63.3334 64.68 63.3334 64.9833 62.9834C65.2556 62.7047 65.4538 62.3622 65.5598 61.9873C65.6657 61.6123 65.6761 61.2168 65.59 60.8368L62.3933 47.0001C62.3038 46.6144 62.1176 46.2578 61.8523 45.9639C61.587 45.67 61.2512 45.4484 60.8766 45.3201C60.3317 45.1255 59.769 44.9848 59.1966 44.9001C58.6069 44.7633 58.0051 44.6852 57.4 44.6667C54.5533 44.6667 51.8232 45.7976 49.8103 47.8105C47.7975 49.8234 46.6666 52.5534 46.6666 55.4001C46.679 64.9264 50.4688 74.059 57.2049 80.7951C63.941 87.5313 73.0736 91.3211 82.6 91.3334C84.0095 91.3334 85.4052 91.0558 86.7074 90.5164C88.0097 89.977 89.1929 89.1864 90.1896 88.1897C91.1863 87.193 91.9769 86.0098 92.5163 84.7076C93.0557 83.4053 93.3333 82.0096 93.3333 80.6001C93.334 80.0062 93.2872 79.4132 93.1933 78.8267C93.0952 78.2472 92.9469 77.6772 92.75 77.1234ZM82.6 86.6668C74.3094 86.6606 66.3602 83.3644 60.4979 77.5021C54.6356 71.6398 51.3395 63.6906 51.3333 55.4001C51.3394 53.793 51.9806 52.2535 53.117 51.1171C54.2534 49.9807 55.7929 49.3396 57.4 49.3334H58.17L60.6666 60.1601L59.4066 60.8134C57.4 61.8634 55.8133 62.7034 56.6533 64.5234C58.0211 68.3958 60.2344 71.9148 63.1323 74.8248C66.0303 77.7348 69.54 79.9628 73.4066 81.3467C75.3666 82.1401 76.1366 80.6701 77.1866 78.6401L77.8633 77.3568L88.6666 79.8301V80.6001C88.6605 82.2072 88.0193 83.7467 86.8829 84.8831C85.7466 86.0195 84.207 86.6606 82.6 86.6668Z"
+            fill="white"
+          />
+          <defs>
+            <filter
+              id="filter0_d"
+              x="0"
+              y="0"
+              width="140"
+              height="140"
+              filterUnits="userSpaceOnUse"
+              color-interpolation-filters="sRGB"
+            >
+              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feColorMatrix
+                in="SourceAlpha"
+                type="matrix"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              />
+              <feOffset dy="2" />
+              <feGaussianBlur stdDeviation="5" />
+              <feColorMatrix
+                type="matrix"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"
+              />
+              <feBlend
+                mode="normal"
+                in2="BackgroundImageFix"
+                result="effect1_dropShadow"
+              />
+              <feBlend
+                mode="normal"
+                in="SourceGraphic"
+                in2="effect1_dropShadow"
+                result="shape"
+              />
+            </filter>
+          </defs>
+        </svg>
+      </div>
+    </div>
+    <div class="request_call_menu">
+      <div class="close_btn">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="40"
+          height="40"
+          viewBox="0 0 40 40"
+          fill="none"
+        >
+          <rect width="40" height="40" fill="#EAEAEA" />
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M19.116 20L14.558 24.558L15.442 25.442L20 20.884L24.558 25.442L25.442 24.558L20.884 20L25.442 15.442L24.558 14.558L20 19.116L15.442 14.558L14.558 15.442L19.116 20Z"
+            fill="black"
+          />
+        </svg>
+      </div>
+      <div class="request_call_menu_body">
+        <form action="" class="apply_form">
+          <p class="light_text">Оставьте заявку</p>
+          <h4 class="apply_form_title">Свяжитесь с нами в 2 клика</h4>
+          <p class="subtitle">
+            Менеджер перезвонит в течение 15 минут и подберет наиболее удобное
+            время.
+          </p>
+          <div class="inputs">
+            <input
+              class="form_input"
+              type="text"
+              name="name"
+              required=""
+              placeholder="Введите имя"
+            />
+            <input
+              class="form_input"
+              type="text"
+              name="city"
+              required=""
+              placeholder="Введите город"
+            />
+            <input
+              class="form_input"
+              type="tel"
+              required=""
+              placeholder="Введите телефон "
+              id="phone2"
+            />
+            <textarea
+              placeholder="Сообщение"
+              class="form_input"
+              name=""
+              id=""
+            ></textarea>
+            <button type="submit">Оставить заявку</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- @import "header.html" -->
+    <div class="main_block">
+      <div data-tilt data-tilt-axis="x" class="container js-tilt">
+        <a href="#arrow_block" class="arrow_block">
+          <div class="arrow-1">
+            <div></div>
+          </div>
+        </a>
+
+        <div class="btn_block">
+          <img src="img/main_block/logo_block.svg" alt="" />
+          <p class="text">Сила в единстве</p>
+          <a href="" class="calcul-btn"> Калькулятор </a>
+        </div>
+        <div class="info-percent">
+          <div class="info-block">
+            <div class="info-item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+              >
+                <path
+                  d="M11 2.66663C9.34315 2.66663 8 4.00977 8 5.66663V9.42399C8 10.2196 8.31607 10.9827 8.87868 11.5453L13.3333 16L8.87868 20.4546C8.31607 21.0172 8 21.7803 8 22.5759V26.3333C8 27.9901 9.34315 29.3333 11 29.3333H21C22.6569 29.3333 24 27.9901 24 26.3333V22.5759C24 21.7803 23.6839 21.0172 23.1213 20.4546L18.6667 16L23.1213 11.5453C23.6839 10.9827 24 10.2196 24 9.42399V5.66663C24 4.00977 22.6569 2.66663 21 2.66663H11ZM21.0404 21.7071C21.228 21.8946 21.3333 22.149 21.3333 22.4142V25.6666C21.3333 26.2189 20.8856 26.6666 20.3333 26.6666H11.6667C11.1144 26.6666 10.6667 26.2189 10.6667 25.6666V22.4142C10.6667 22.149 10.772 21.8946 10.9596 21.7071L16 16.6666L21.0404 21.7071ZM16 15.3333L10.9596 10.2929C10.772 10.1053 10.6667 9.85096 10.6667 9.58575V6.33329C10.6667 5.78101 11.1144 5.33329 11.6667 5.33329H20.3333C20.8856 5.33329 21.3333 5.78101 21.3333 6.33329V9.58575C21.3333 9.85096 21.228 10.1053 21.0404 10.2929L16 15.3333Z"
+                  fill="white"
+                />
+              </svg>
+              <p><span>Минимальные</span> сроки выдачи квартиры</p>
+            </div>
+            <div class="info-item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="28"
+                viewBox="0 0 32 28"
+                fill="none"
+              >
+                <path
+                  d="M31.0684 3.73358C31.0664 3.73358 31.0645 3.73333 31.0625 3.73333H22.5625V2.8C22.5625 1.25611 21.3008 0 19.75 0H12.25C10.6992 0 9.4375 1.25611 9.4375 2.8V3.73333H0.9375C0.415527 3.73333 0 4.15917 0 4.66667V25.2C0 26.7439 1.26172 28 2.8125 28H29.1875C30.7383 28 32 26.7439 32 25.2V4.68635C32 4.68514 32 4.68392 32 4.68271C31.9641 4.06972 31.5854 3.73698 31.0684 3.73358ZM11.3125 2.8C11.3125 2.28545 11.7332 1.86667 12.25 1.86667H19.75C20.2668 1.86667 20.6875 2.28545 20.6875 2.8V3.73333H11.3125V2.8ZM29.7617 5.6L26.8503 14.2951C26.7227 14.6769 26.3652 14.9333 25.9612 14.9333H20.6875V14C20.6875 13.4845 20.2678 13.0667 19.75 13.0667H12.25C11.7322 13.0667 11.3125 13.4845 11.3125 14V14.9333H6.03882C5.63477 14.9333 5.27734 14.6769 5.14966 14.2951L2.23828 5.6H29.7617ZM18.8125 14.9333V16.8H13.1875V14.9333H18.8125ZM30.125 25.2C30.125 25.7146 29.7043 26.1333 29.1875 26.1333H2.8125C2.29565 26.1333 1.875 25.7146 1.875 25.2V10.4181L3.37085 14.8855C3.75415 16.0307 4.82642 16.8 6.03882 16.8H11.3125V17.7333C11.3125 18.2489 11.7322 18.6667 12.25 18.6667H19.75C20.2678 18.6667 20.6875 18.2489 20.6875 17.7333V16.8H25.9612C27.1736 16.8 28.2458 16.0307 28.6292 14.8855L30.125 10.4181V25.2Z"
+                  fill="white"
+                />
+              </svg>
+              <p>Нужно только <span>Ваше удостоверение</span></p>
+            </div>
+            <div class="info-item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="31"
+                height="32"
+                viewBox="0 0 31 32"
+                fill="none"
+              >
+                <path
+                  d="M29.2246 16.4145C29.0959 16.1511 29.0959 15.8489 29.2246 15.5856L30.4181 13.144C31.0826 11.7846 30.5561 10.1643 29.2195 9.45513L26.8189 8.1814C26.5599 8.04402 26.3823 7.79953 26.3316 7.51084L25.8621 4.83406C25.6007 3.3437 24.2221 2.34222 22.7242 2.55415L20.0334 2.93477C19.743 2.97577 19.4558 2.8824 19.2451 2.67859L17.2919 0.789108C16.2044 -0.263005 14.5006 -0.263067 13.4132 0.789108L11.4599 2.67877C11.2492 2.88265 10.962 2.97583 10.6716 2.93496L7.98085 2.55434C6.48243 2.34228 5.10432 3.34389 4.84288 4.83425L4.37339 7.51091C4.3227 7.79965 4.14514 8.04409 3.88621 8.18152L1.48561 9.45526C0.148999 10.1644 -0.377495 11.7848 0.286997 13.1442L1.48042 15.5857C1.60917 15.8491 1.60917 16.1512 1.48042 16.4146L0.286935 18.8561C-0.377558 20.2155 0.148936 21.8358 1.48555 22.545L3.88614 23.8187C4.14514 23.9561 4.3227 24.2006 4.37339 24.4893L4.84288 27.1661C5.08088 28.5228 6.24424 29.4743 7.58129 29.4741C7.71297 29.4741 7.8466 29.4649 7.98091 29.4459L10.6717 29.0653C10.9619 29.0241 11.2492 29.1177 11.46 29.3215L13.4132 31.2109C13.957 31.7371 14.6546 32.0001 15.3525 32C16.0502 31.9999 16.7482 31.7369 17.2919 31.2109L19.2451 29.3215C19.4558 29.1177 19.7431 29.0245 20.0334 29.0653L22.7242 29.4459C24.2228 29.6579 25.6007 28.6563 25.8621 27.166L26.3317 24.4893C26.3824 24.2006 26.5599 23.9562 26.8189 23.8187L29.2195 22.545C30.5561 21.8359 31.0826 20.2154 30.4181 18.856L29.2246 16.4145ZM28.3544 20.9146L25.9538 22.1883C25.1885 22.5945 24.6635 23.3168 24.5138 24.1703L24.0443 26.8471C23.9559 27.3513 23.4897 27.69 22.9827 27.6184L20.2919 27.2378C19.4338 27.1162 18.5847 27.3924 17.9619 27.9949L16.0086 29.8843C15.6408 30.2401 15.0643 30.2401 14.6963 29.8843L12.7432 27.9948C12.2168 27.4856 11.5287 27.2097 10.8103 27.2097C10.6787 27.2097 10.546 27.2189 10.4131 27.2377L7.72235 27.6184C7.21573 27.69 6.74917 27.3512 6.66067 26.847L6.19112 24.1702C6.04137 23.3167 5.5165 22.5943 4.75107 22.1882L2.35047 20.9145C1.89823 20.6746 1.72011 20.1264 1.94492 19.6665L3.1384 17.2249C3.5189 16.4464 3.5189 15.5536 3.1384 14.7751L1.94492 12.3335C1.72011 11.8736 1.89823 11.3254 2.35047 11.0855L4.75107 9.81175C5.51644 9.40557 6.04137 8.6832 6.19105 7.82971L6.66055 5.153C6.74905 4.64875 7.21517 4.31001 7.72222 4.38163L10.413 4.76225C11.2708 4.88369 12.1202 4.60763 12.743 4.0052L14.6963 2.11572C15.0641 1.75985 15.6406 1.75985 16.0086 2.11572L17.9617 4.0052C18.5845 4.60769 19.4338 4.88369 20.2918 4.76225L22.9825 4.38163C23.4892 4.30994 23.9558 4.64875 24.0442 5.153L24.5137 7.82978C24.6635 8.68327 25.1883 9.4057 25.9538 9.81175L28.3544 11.0855C28.8066 11.3254 28.9847 11.8736 28.7599 12.3335L27.5664 14.775C27.1859 15.5534 27.1859 16.4464 27.5664 17.2249L28.7599 19.6663C28.9848 20.1264 28.8067 20.6746 28.3544 20.9146Z"
+                  fill="white"
+                />
+                <path
+                  d="M22.0952 9.25722C21.7349 8.89685 21.1505 8.89685 20.7902 9.25722L8.60976 21.4377C8.24938 21.7981 8.24938 22.3824 8.60976 22.7427C8.78994 22.9229 9.02613 23.0131 9.26225 23.0131C9.49837 23.0131 9.73462 22.923 9.91474 22.7427L22.0952 10.5623C22.4557 10.2019 22.4557 9.61765 22.0952 9.25722Z"
+                  fill="white"
+                />
+                <path
+                  d="M11.6612 7.69482C9.79551 7.69482 8.27759 9.21274 8.27759 11.0785C8.27759 12.9442 9.79551 14.4621 11.6612 14.4621C13.527 14.4621 15.0449 12.9442 15.0449 11.0785C15.0449 9.21274 13.527 7.69482 11.6612 7.69482ZM11.6612 12.6165C10.8132 12.6165 10.1233 11.9265 10.1233 11.0784C10.1233 10.2304 10.8132 9.54043 11.6612 9.54043C12.5093 9.54043 13.1993 10.2304 13.1993 11.0784C13.1992 11.9265 12.5093 12.6165 11.6612 12.6165Z"
+                  fill="white"
+                />
+                <path
+                  d="M19.0437 17.5381C17.178 17.5381 15.66 19.056 15.66 20.9217C15.66 22.7875 17.178 24.3054 19.0437 24.3054C20.9094 24.3054 22.4273 22.7875 22.4273 20.9217C22.4273 19.056 20.9094 17.5381 19.0437 17.5381ZM19.0437 22.4597C18.1956 22.4597 17.5056 21.7698 17.5056 20.9217C17.5056 20.0737 18.1956 19.3838 19.0437 19.3838C19.8917 19.3838 20.5817 20.0737 20.5817 20.9217C20.5817 21.7698 19.8917 22.4597 19.0437 22.4597Z"
+                  fill="white"
+                />
+              </svg>
+              <p>Беспроцентная <span>рассрочка</span> до 120 месяцев</p>
+            </div>
+            <div class="info-item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+              >
+                <path
+                  d="M27.3137 4.68625C24.2917 1.66431 20.2738 0 16 0C11.7262 0 7.70819 1.66431 4.68625 4.68625C1.66425 7.70825 0 11.7262 0 16C0 20.2738 1.66425 24.2917 4.68625 27.3137C7.70825 30.3357 11.7262 32 16 32C20.2738 32 24.2917 30.3357 27.3137 27.3137C30.3357 24.2917 32 20.2738 32 16C32 11.7262 30.3357 7.70831 27.3137 4.68625ZM16 30.125C8.21144 30.125 1.875 23.7886 1.875 16C1.875 8.21144 8.21144 1.875 16 1.875C23.7886 1.875 30.125 8.21144 30.125 16C30.125 23.7886 23.7886 30.125 16 30.125Z"
+                  fill="white"
+                />
+                <path
+                  d="M23.6441 10.8662C23.278 10.5002 22.6844 10.5002 22.3183 10.8662L14.0396 19.1449L9.68171 14.787C9.31564 14.4209 8.72202 14.4209 8.35589 14.787C7.98977 15.153 7.98977 15.7467 8.35589 16.1128L13.3767 21.1336C13.5598 21.3167 13.7997 21.4082 14.0396 21.4082C14.2795 21.4082 14.5195 21.3166 14.7025 21.1336L23.6441 12.192C24.0102 11.8259 24.0102 11.2323 23.6441 10.8662Z"
+                  fill="white"
+                />
+              </svg>
+              <p>Мы не проверяем <span>Вашу кредитную историю</span></p>
+            </div>
+            <div class="info-item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+              >
+                <path
+                  d="M27.3137 4.68625C24.2917 1.66431 20.2738 0 16 0C11.7262 0 7.70819 1.66431 4.68625 4.68625C1.66425 7.70825 0 11.7262 0 16C0 20.2738 1.66425 24.2917 4.68625 27.3137C7.70825 30.3357 11.7262 32 16 32C20.2738 32 24.2917 30.3357 27.3137 27.3137C30.3357 24.2917 32 20.2738 32 16C32 11.7262 30.3357 7.70831 27.3137 4.68625ZM16 30.125C8.21144 30.125 1.875 23.7886 1.875 16C1.875 8.21144 8.21144 1.875 16 1.875C23.7886 1.875 30.125 8.21144 30.125 16C30.125 23.7886 23.7886 30.125 16 30.125Z"
+                  fill="white"
+                />
+                <path
+                  d="M23.6441 10.8662C23.278 10.5002 22.6844 10.5002 22.3183 10.8662L14.0396 19.1449L9.68171 14.787C9.31564 14.4209 8.72202 14.4209 8.35589 14.787C7.98977 15.153 7.98977 15.7467 8.35589 16.1128L13.3767 21.1336C13.5598 21.3167 13.7997 21.4082 14.0396 21.4082C14.2795 21.4082 14.5195 21.3166 14.7025 21.1336L23.6441 12.192C24.0102 11.8259 24.0102 11.2323 23.6441 10.8662Z"
+                  fill="white"
+                />
+              </svg>
+              <p><span>Без пенсионных </span>отчислений</p>
+            </div>
+            <div class="info-item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+              >
+                <path
+                  d="M27.3137 4.68625C24.2917 1.66431 20.2738 0 16 0C11.7262 0 7.70819 1.66431 4.68625 4.68625C1.66425 7.70825 0 11.7262 0 16C0 20.2738 1.66425 24.2917 4.68625 27.3137C7.70825 30.3357 11.7262 32 16 32C20.2738 32 24.2917 30.3357 27.3137 27.3137C30.3357 24.2917 32 20.2738 32 16C32 11.7262 30.3357 7.70831 27.3137 4.68625ZM16 30.125C8.21144 30.125 1.875 23.7886 1.875 16C1.875 8.21144 8.21144 1.875 16 1.875C23.7886 1.875 30.125 8.21144 30.125 16C30.125 23.7886 23.7886 30.125 16 30.125Z"
+                  fill="white"
+                />
+                <path
+                  d="M23.6441 10.8662C23.278 10.5002 22.6844 10.5002 22.3183 10.8662L14.0396 19.1449L9.68171 14.787C9.31564 14.4209 8.72202 14.4209 8.35589 14.787C7.98977 15.153 7.98977 15.7467 8.35589 16.1128L13.3767 21.1336C13.5598 21.3167 13.7997 21.4082 14.0396 21.4082C14.2795 21.4082 14.5195 21.3166 14.7025 21.1336L23.6441 12.192C24.0102 11.8259 24.0102 11.2323 23.6441 10.8662Z"
+                  fill="white"
+                />
+              </svg>
+              <p><span>Без подтверждения </span>дохода</p>
+            </div>
+            <div class="info-item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M16.7036 2.91778C16.2943 2.58291 15.7057 2.58291 15.2964 2.91778L3.07414 12.9178C2.81621 13.1288 2.66663 13.4445 2.66663 13.7777V26C2.66663 27.8403 4.15964 29.3333 5.99996 29.3333H11.5555H20.4444H26C27.8403 29.3333 29.3333 27.8403 29.3333 26V13.7777C29.3333 13.4445 29.1837 13.1288 28.9258 12.9178L16.7036 2.91778ZM21.5555 27.1111H26C26.613 27.1111 27.1111 26.613 27.1111 26V14.3043L16 5.21336L4.88885 14.3043V26C4.88885 26.613 5.38694 27.1111 5.99996 27.1111H10.4444V21.5555C10.4444 18.4874 12.9319 16 16 16C19.0681 16 21.5555 18.4874 21.5555 21.5555V27.1111ZM12.6666 27.1111V21.5555C12.6666 19.7147 14.1592 18.2222 16 18.2222C17.8408 18.2222 19.3333 19.7147 19.3333 21.5555V27.1111H12.6666Z"
+                  fill="white"
+                />
+              </svg>
+              <p><span>Недвижимость </span>оформляется на Вас</p>
+            </div>
+            <div class="img-precent">
+              <img class="percent" src="img/main_block/percent.svg" alt="" />
+              <img
+                class="percent-adapted"
+                src="img/main_block/percent-adaptede.svg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="programs" id="arrow_block">
+      <div class="programs_slider">
+        <div class="swiper-container program_swiper">
+          <div class="container">
+            <div class="title_btn">
+              <h3 class="programs__title">Программы специально для Вас!</h3>
+              <div class="swiper_btn">
+                <div class="swiper-button-prev">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="56"
+                    height="56"
+                    viewBox="0 0 56 56"
+                    fill="none"
+                  >
+                    <circle
+                      cx="28"
+                      cy="28"
+                      r="28"
+                      transform="rotate(-180 28 28)"
+                      fill="white"
+                    />
+                    <path
+                      d="M18.3077 28L32.8461 19.6062L32.8461 36.3937L18.3077 28Z"
+                      fill="black"
+                    />
+                  </svg>
+                </div>
+                <div class="swiper-button-next">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="56"
+                    height="56"
+                    viewBox="0 0 56 56"
+                    fill="none"
+                  >
+                    <circle
+                      cx="28"
+                      cy="28"
+                      r="28"
+                      transform="rotate(-180 28 28)"
+                      fill="white"
+                    />
+                    <path
+                      d="M18.3077 28L32.8461 19.6062L32.8461 36.3937L18.3077 28Z"
+                      fill="black"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <form action="" class="swiper-form">
+                <div class="img">
+                  <img src="img/programs/Rectangle 44.jpg" alt="" />
+                </div>
+                <div class="slide_content">
+                  <h4 class="title">Программа Kuanysh</h4>
+                  <dl class="programs-dl">
+                    <dt>Первоначальный взнос</dt>
+                    <dd>от 30% - 49%</dd>
+                    <dt>Вступительный взнос</dt>
+                    <dd>200 000 ₸</dd>
+                    <dt>Членский взнос</dt>
+                    <dd>5 000 ₸ после приобретения квартиры</dd>
+                    <dt>Займ</dt>
+                    <dd>займ до 1 000 000 ₸</dd>
+                    <dt>Срок займа</dt>
+                    <dd>до 10 лет</dd>
+                    <dt>Заселение</dt>
+                    <dd>в порядке очереди</dd>
+                    <dt>Рассрочка</dt>
+                    <dd>0% в год</dd>
+                  </dl>
+                  <a href="#push_apply" class="main_btn">Оставить заявку</a>
+                </div>
+              </form>
+            </div>
+            <div class="swiper-slide">
+              <form action="" class="swiper-form">
+                <div class="img">
+                  <img src="img/programs/Rectangle 44-1.jpg" alt="" />
+                </div>
+                <div class="slide_content">
+                  <h4 class="title">Программа Bakyt</h4>
+                  <dl class="programs-dl">
+                    <dt>Первоначальный взнос</dt>
+                    <dd>от 30% - 49%</dd>
+                    <dt>Вступительный взнос</dt>
+                    <dd>200 000 ₸</dd>
+                    <dt>Членский взнос</dt>
+                    <dd>5 000 ₸ после приобретения квартиры</dd>
+                    <dt>Займ</dt>
+                    <dd>займ до 1 000 000 ₸</dd>
+                    <dt>Срок займа</dt>
+                    <dd>до 10 лет</dd>
+                    <dt>Заселение</dt>
+                    <dd>в порядке очереди</dd>
+                    <dt>Рассрочка</dt>
+                    <dd>0% в год</dd>
+                  </dl>
+                  <a href="#push_apply" class="main_btn">Оставить заявку</a>
+                </div>
+              </form>
+            </div>
+            <div class="swiper-slide">
+              <form action="" class="swiper-form">
+                <div class="img">
+                  <img src="img/programs/Rectangle 44.jpg" alt="" />
+                </div>
+                <div class="slide_content">
+                  <h4 class="title">Накопительная Программа Arman</h4>
+                  <dl class="programs-dl">
+                    <dt>Первоначальный взнос</dt>
+                    <dd>от 30% - 49%</dd>
+                    <dt>Вступительный взнос</dt>
+                    <dd>200 000 ₸</dd>
+                    <dt>Членский взнос</dt>
+                    <dd>5 000 ₸ после приобретения квартиры</dd>
+                    <dt>Займ</dt>
+                    <dd>займ до 1 000 000 ₸</dd>
+                    <dt>Срок займа</dt>
+                    <dd>до 10 лет</dd>
+                    <dt>Заселение</dt>
+                    <dd>в порядке очереди</dd>
+                    <dt>Рассрочка</dt>
+                    <dd>0% в год</dd>
+                  </dl>
+                  <a href="#push_apply" class="main_btn">Оставить заявку</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="calculate_mortgage">
+      <div class="container">
+        <div class="mortgage_block">
+          <h3 class="mortgage_title">Расчитайте Вашу ипотеку</h3>
+          <div class="mortgage_tabs">
+            <h4 class="tabs_title">Выберите программу</h4>
+            <div class="mortgage_tabs_content">
+              <div class="tabs">
+                <div class="tabs__nav">
+                  <button
+                    class="tabs__nav__btn active"
+                    type="button"
+                    data-tab="#profile"
+                  >
+                    Kuanysh
+                  </button>
+                  <button
+                    class="tabs__nav__btn"
+                    type="button"
+                    data-tab="#doctors"
+                  >
+                    Bakyt
+                  </button>
+                  <button
+                    class="tabs__nav__btn"
+                    type="button"
+                    data-tab="#history"
+                  >
+                    Arman
+                  </button>
+                  <button
+                    class="tabs__nav__btn"
+                    type="button"
+                    data-tab="#QazAuto"
+                  >
+                    Qaz Auto
+                  </button>
+                  <button
+                    class="tabs__nav__btn"
+                    type="button"
+                    data-tab="#paishik"
+                  >
+                    Пайщик инвестор
+                  </button>
+                </div>
+                <div class="tabs__content">
+                  <div class="tabs__item active" id="profile">
+                    <div class="range_container">
+                      <div class="range_block">
+                        <p class="range__label">Стоимость недвижимости</p>
+                        <div class="range_slider">
+                          <p><span id="value"></span> ₸</p>
+                          <input
+                            type="range"
+                            min="0"
+                            max="200000000"
+                            value="1"
+                            id="myRange"
+                            class="slider"
+                          />
+                          <!-- <p class="range__value">
+                            <span id="range1Value">24 000 000</span>
+                            <span class="range__currency">₸</span>
+                          </p>
+                          <input
+                            id="range1"
+                            type="range"
+                            min="0"
+                            max="30000000"
+                            step="1"
+                            value="5000000"
+                          /> -->
+                        </div>
+                      </div>
+                      <div class="range_block">
+                        <p class="range__label">Количество месяцев</p>
+                        <div class="range_slider">
+                          <p><span id="value2"></span> ₸</p>
+                          <input
+                            type="range"
+                            min="0"
+                            max="200000000"
+                            value="1"
+                            id="myRange2"
+                            class="slider"
+                          />
+                          <!-- <p class="range__value">
+                            <span id="range2Value">17 000 000</span>
+                            <span class="range__currency">мес.</span>
+                            <span class="sum_num">・3 года</span>
+                          </p>
+                          <input
+                            id="range2"
+                            type="range"
+                            min="0"
+                            max="240"
+                            step="1"
+                            value="35"
+                          /> -->
+                        </div>
+                      </div>
+                      <div class="mortgage_input">
+                        <p class="text">Первоначальный взнос</p>
+                        <p class="num">16 000 000 ₸</p>
+                        <div class="calc-text">*сумма с учетом комиссий 5%</div>
+                      </div>
+                      <div class="mortgage_input">
+                        <p class="text">Вступительный взнос</p>
+                        <p class="num">1 000 000 ₸</p>
+                        <div class="calc-text">*сумма с учетом комиссий 5%</div>
+                      </div>
+                      <div class="mortgage_input">
+                        <p class="text">Членский взнос</p>
+                        <p class="num">5 000 ₸</p>
+                      </div>
+                    </div>
+                    <div class="results_block">
+                      <p class="results_text">
+                        Итого ежемесячный платеж на 3 года по программе Kuanysh:
+                      </p>
+                      <p class="results_price">110 000 ₸</p>
+                    </div>
+                  </div>
+                  <div class="tabs__item" id="doctors">
+                    <div class="range_container">
+                      <div class="range_block">
+                        <p class="range__label">Стоимость недвижимости</p>
+                        <div class="range_slider">
+                          <p class="range__value">
+                            <span id="range3Value">24 000 000</span>
+                            <span class="range__currency">₸</span>
+                          </p>
+                          <input
+                            id="range3"
+                            type="range"
+                            min="0"
+                            max="30000000"
+                            step="1"
+                            value="5000000"
+                          />
+                        </div>
+                      </div>
+                      <div class="range_block">
+                        <p class="range__label">Количество месяцев</p>
+                        <div class="range_slider">
+                          <p class="range__value">
+                            <span id="range4Value">17 000 000</span>
+                            <span class="range__currency">мес.</span>
+                            <span class="sum_num">・3 года</span>
+                          </p>
+                          <input
+                            id="range4"
+                            type="range"
+                            min="0"
+                            max="240"
+                            step="1"
+                            value="35"
+                          />
+                        </div>
+                      </div>
+                      <div class="mortgage_input">
+                        <p class="text">Первоначальный взнос</p>
+                        <p class="num">16 000 000 ₸</p>
+                        <div class="calc-text">*сумма с учетом комиссий 5%</div>
+                      </div>
+                      <div class="mortgage_input">
+                        <p class="text">Вступительный взнос</p>
+                        <p class="num">1 000 000 ₸</p>
+                        <div class="calc-text">*сумма с учетом комиссий 5%</div>
+                      </div>
+                      <div class="mortgage_input">
+                        <p class="text">Членский взнос</p>
+                        <p class="num">5 000 ₸</p>
+                      </div>
+                    </div>
+                    <div class="results_block">
+                      <p class="results_text">
+                        Итого ежемесячный платеж на 3 года по программе Kuanysh:
+                      </p>
+                      <p class="results_price">110 000 ₸</p>
+                    </div>
+                  </div>
+                  <div class="tabs__item" id="history">
+                    <div class="range_container">
+                      <div class="range_block">
+                        <p class="range__label">Стоимость недвижимости</p>
+                        <div class="range_slider">
+                          <p class="range__value">
+                            <span id="range5Value">24 000 000</span>
+                            <span class="range__currency">₸</span>
+                          </p>
+                          <input
+                            id="range5"
+                            type="range"
+                            min="0"
+                            max="30000000"
+                            step="1"
+                            value="5000000"
+                          />
+                        </div>
+                      </div>
+                      <div class="range_block">
+                        <p class="range__label">Количество месяцев</p>
+                        <div class="range_slider">
+                          <p class="range__value">
+                            <span id="range6Value">17 000 000</span>
+                            <span class="range__currency">мес.</span>
+                            <span class="sum_num">・3 года</span>
+                          </p>
+                          <input
+                            id="range6"
+                            type="range"
+                            min="0"
+                            max="240"
+                            step="1"
+                            value="35"
+                          />
+                        </div>
+                      </div>
+                      <div class="mortgage_input">
+                        <p class="text">Первоначальный взнос</p>
+                        <p class="num">16 000 000 ₸</p>
+                        <div class="calc-text">*сумма с учетом комиссий 5%</div>
+                      </div>
+                      <div class="mortgage_input">
+                        <p class="text">Вступительный взнос</p>
+                        <p class="num">1 000 000 ₸</p>
+                        <div class="calc-text">*сумма с учетом комиссий 5%</div>
+                      </div>
+                      <div class="mortgage_input">
+                        <p class="text">Членский взнос</p>
+                        <p class="num">5 000 ₸</p>
+                      </div>
+                    </div>
+                    <div class="results_block">
+                      <p class="results_text">
+                        Итого ежемесячный платеж на 3 года по программе Kuanysh:
+                      </p>
+                      <p class="results_price">110 000 ₸</p>
+                    </div>
+                  </div>
+                  <div class="tabs__item" id="QazAuto">asd</div>
+                  <div class="tabs__item" id="paishik">eqew</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="push_apply" id="push_apply">
+      <div class="container">
+        <div class="push_apply_left wow slideInLeft" data-wow-duration="1.2s">
+          <h4 class="title">Как приобрести квартиру</h4>
+          <div class="push_apply_left_item">
+            <p class="num">01</p>
+            <p class="text">
+              Ознакомление с нашим кооперативом и получение консультации по
+              приобретению недвижимости или автомобиля.
+            </p>
+          </div>
+          <div class="push_apply_left_item">
+            <p class="num">02</p>
+            <p class="text">
+              Заключение договора Пайщика и внесение вступительного взноса.
+              Регистрация в системе и внесение первоначального взноса согласно
+              выбранной программы.
+            </p>
+          </div>
+          <div class="push_apply_left_item">
+            <p class="num">03</p>
+            <p class="text">
+              Как придет очередь Пайщик выбирает недвижимость в течение 30-и
+              дней.
+            </p>
+          </div>
+          <div class="push_apply_left_item">
+            <p class="num">04</p>
+            <p class="text">
+              Заключение договора Купли – Продажи квартиры. Квартира оформляется
+              на Пайщика.
+            </p>
+          </div>
+          <div class="push_apply_left_item">
+            <p class="num">05</p>
+            <p class="text">
+              Получение ежемесячного графика погашения платежей и заселение в
+              собственную квартиру.
+            </p>
+          </div>
+        </div>
+        <div class="push_apply_right wow slideInRight" data-wow-duration="1.2s">
+          <form action="" class="apply_form">
+            <h4 class="apply_form_title">Онлайн запись</h4>
+            <p class="subtitle">
+              Оставьте свои контакты и мы свяжемся с вами в ближайшее время
+            </p>
+            <div class="inputs">
+              <input
+                class="form_input"
+                type="text"
+                name="name"
+                required
+                placeholder="Введите имя"
+              />
+              <input
+                class="form_input"
+                type="text"
+                name="city"
+                required
+                placeholder="Введите город"
+              />
+              <input
+                class="form_input"
+                type="tel"
+                required
+                placeholder="Введите телефон "
+                id="phone"
+              />
+              <textarea
+                placeholder="Сообщение"
+                class="form_input"
+                name=""
+                id=""
+              ></textarea>
+              <button type="submit">Оставить заявку</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="partners">
+      <div class="container">
+        <h3 class="partners_title">Партнеры</h3>
+        <div class="partners_block">
+          <a data-wow-duration="1.5s" class="wow animate__zoomIn" href=""
+            ><img src="img/partners/img-1.svg" alt=""
+          /></a>
+          <a data-wow-duration="1.5s" class="wow animate__zoomIn" href=""
+            ><img src="img/partners/img-2.svg" alt=""
+          /></a>
+          <a data-wow-duration="1.5s" class="wow animate__zoomIn" href=""
+            ><img src="img/partners/img-3.svg" alt=""
+          /></a>
+          <a data-wow-duration="1.5s" class="wow animate__zoomIn" href=""
+            ><img src="img/partners/img-4.svg" alt=""
+          /></a>
+          <a data-wow-duration="1.5s" class="wow animate__zoomIn" href=""
+            ><img src="img/partners/img-5.svg" alt=""
+          /></a>
+          <a data-wow-duration="1.5s" class="wow animate__zoomIn" href=""
+            ><img src="img/partners/img-6.svg" alt=""
+          /></a>
+          <a data-wow-duration="1.5s" class="wow animate__zoomIn" href=""
+            ><img src="img/partners/img-7.svg" alt=""
+          /></a>
+        </div>
+      </div>
+    </div>
+    <div class="questions">
+      <div class="container">
+        <div class="questions__block">
+          <h3 class="mortgage_title">Частые вопросы</h3>
+          <div class="certain_product__list">
+            <div class="category__block">
+              <div class="category">
+                <div class="category_text">
+                  <p>Что такое кооператив?</p>
+                  <svg
+                    class="plus_icon active"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="22"
+                    height="22"
+                    viewBox="0 0 22 22"
+                    fill="none"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M10.033 11.9376V21.6066L11.9082 21.6066L11.9082 11.9376L21.5772 11.9376V10.0624L11.9082 10.0624L11.9082 0.393391L10.033 0.393392V10.0624L0.364015 10.0624V11.9376L10.033 11.9376Z"
+                      fill="#05B4CD"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="category__toggle__block active">
+                <p>
+                  Потребительский кооператив граждан - добровольное объединение
+                  физических и юридических лиц на основе членства в целях
+                  удовлетворения финансовых потребностей членов кооператива.
+                  Кооперативами называют некоммерческие организации в виде
+                  потребительских кооперативов, строго соблюдающих Закон РК и
+                  осуществляющих деятельность по обеспечению всех членов
+                  кооператива недвижимостью. Каждый из объектов покупается или
+                  возводится на денежные средства кооперативов, в которые, в
+                  зависимости от разновидности кооператива, могут входить как
+                  простые граждане (физические лица), так и юридические лица.
+                  Собственником жилья член кооператива становится сразу после
+                  оформления Без участия коммерческих банковских учреждений
+                  покупка квартир обходится членам кооператива намного дешевле.
+                  Каждый жилищный кооператив имеет свой устав. Он определяет
+                  объем паевого взноса (который необходим, для того чтобы
+                  вселиться в квартиру), регулирует процедуру вступления или
+                  выхода из кооператива и всю деятельность организации.
+                  Финансовыми и хозяйственными делами жилищного кооператива
+                  ведают Правление во главе с председателем, которых выбирают на
+                  общем собрании членов организации.
+                </p>
+              </div>
+            </div>
+            <div class="category__block">
+              <div class="category">
+                <div class="category_text">
+                  <p>
+                    Почему сегодня выгодно вступать в кооперативы и приобретать
+                    объекты через кооперативы?
+                  </p>
+                  <svg
+                    class="plus_icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="22"
+                    height="22"
+                    viewBox="0 0 22 22"
+                    fill="none"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M10.033 11.9376V21.6066L11.9082 21.6066L11.9082 11.9376L21.5772 11.9376V10.0624L11.9082 10.0624L11.9082 0.393391L10.033 0.393392V10.0624L0.364015 10.0624V11.9376L10.033 11.9376Z"
+                      fill="#05B4CD"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="category__toggle__block">
+                <p>
+                  Потребительский кооператив граждан - добровольное объединение
+                  физических и юридических лиц на основе членства в целях
+                  удовлетворения финансовых потребностей членов кооператива.
+                  Кооперативами называют некоммерческие организации в виде
+                  потребительских кооперативов, строго соблюдающих Закон РК и
+                  осуществляющих деятельность по обеспечению всех членов
+                  кооператива недвижимостью. Каждый из объектов покупается или
+                </p>
+              </div>
+            </div>
+            <div class="category__block">
+              <div class="category">
+                <div class="category_text">
+                  <p>
+                    Почему сегодня выгодно вступать в кооперативы и приобретать
+                    объекты через кооперативы?
+                  </p>
+                  <svg
+                    class="plus_icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="22"
+                    height="22"
+                    viewBox="0 0 22 22"
+                    fill="none"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M10.033 11.9376V21.6066L11.9082 21.6066L11.9082 11.9376L21.5772 11.9376V10.0624L11.9082 10.0624L11.9082 0.393391L10.033 0.393392V10.0624L0.364015 10.0624V11.9376L10.033 11.9376Z"
+                      fill="#05B4CD"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="category__toggle__block">
+                <p>
+                  Потребительский кооператив граждан - добровольное объединение
+                  физических и юридических лиц на основе членства в целях
+                  удовлетворения финансовых потребностей членов кооператива.
+                  Кооперативами называют некоммерческие организации в виде
+                  потребительских кооперативов, строго соблюдающих Закон РК и
+                  осуществляющих деятельность по обеспечению всех членов
+                  кооператива недвижимостью. Каждый из объектов покупается или
+                </p>
+              </div>
+            </div>
+          </div>
+          <button class="find_all">Посмотреть все</button>
+        </div>
+      </div>
+    </div>
+    <!-- @import "footer.html" -->
+
+    <script src="js/jq/jquery.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/tilt.jquery.js"></script>
+    <script src="js/rangeslider.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/tabs-script.js"></script>
+  </body>
+</html>
