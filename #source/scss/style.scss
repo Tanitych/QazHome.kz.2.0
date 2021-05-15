@@ -318,14 +318,16 @@ h6 {
   font-size: 16px;
   line-height: 20px;
   white-space: nowrap;
-
   letter-spacing: -0.154px;
-
-  /* Black / Light */
-
   color: var(--black);
   text-decoration: none;
   position: relative;
+  &.active {
+    color: var(--blue);
+    &:after {
+      display: none;
+    }
+  }
 }
 
 .header__link:after {
@@ -754,7 +756,9 @@ h6 {
   width: 292px;
   z-index: 51;
   cursor: pointer;
-
+  @media (max-width: 600px) {
+    right: 9px;
+  }
   .a {
     display: flex;
     align-items: center;
@@ -830,7 +834,7 @@ h6 {
   }
   .apply_form {
     box-shadow: unset;
-    margin: 100px 0px 0px 0px;
+    margin-top: 10%;
   }
   @media (max-width: 768px) {
     max-width: unset;
@@ -1098,6 +1102,7 @@ h6 {
     letter-spacing: 0.38px;
     color: var(--black);
     margin: 0px 0px 8px 0px;
+    white-space: nowrap;
   }
   .calc-text {
     font-style: normal;
@@ -1511,6 +1516,10 @@ h6 {
     justify-items: center;
   }
   a {
+    transition: all ease 0.3s;
+    &:hover {
+      transform: translateY(-7px);
+    }
     img {
       max-width: 120px;
     }
@@ -1751,6 +1760,7 @@ footer {
   background-size: 100% 100%;
   background-position: center;
   padding: 224px 0px 180px 0px;
+  background-attachment: fixed;
   @media (max-width: 768px) {
     padding: 161px 0px 82px 0px;
     background: url(../img/about_company/adapted_back.jpg) no-repeat;
@@ -2198,9 +2208,21 @@ footer {
   border-radius: 8px;
   padding: 55px 55px;
   margin: 0 auto;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    padding: 16px 16px;
+  }
 }
 .vote__body__left {
   border-right: 1px solid #e5e5ea;
+  flex: 0 0 50%;
+  margin: 0px 35px 0px 0px;
+  padding: 0px 10px 0px 0px;
+  @media (max-width: 768px) {
+    margin: 0px 0px 30px 0px;
+    padding: 0px 0px 0px 0px;
+    border-right: unset;
+  }
   .radio_block {
     margin: 24px 0px 40px 0px;
   }
@@ -2212,8 +2234,16 @@ footer {
     color: var(--black);
     max-width: 378px;
     margin: 0px 0px 0px 0px;
+    @media (max-width: 768px) {
+      font-size: 25px;
+    }
   }
   .btns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 18px;
+    row-gap: 10px;
+    justify-items: flex-start;
     .answer {
       padding: 13px 13px;
       font-style: normal;
@@ -2227,6 +2257,9 @@ footer {
       transition: all ease 0.3s;
       width: 100%;
       max-width: 190px;
+      @media (max-width: 768px) {
+        max-width: unset;
+      }
       &:hover {
         background: var(--blue-hov);
       }
@@ -2234,6 +2267,11 @@ footer {
     .result {
       color: var(--blue);
       background-color: unset;
+      transition: all ease 0.3s;
+      font-weight: 600;
+      &:hover {
+        color: var(--blue-hov);
+      }
     }
   }
 }
@@ -2243,9 +2281,13 @@ footer {
   display: block;
   position: relative;
   padding-left: 35px;
-  margin-bottom: 12px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.32px;
+  color: var(--black);
   cursor: pointer;
-  font-size: 22px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -2270,7 +2312,6 @@ footer {
   background-color: var(--white);
   border-radius: 50%;
   border: 1px solid #c7c7cc;
-  transition: all ease 0.3s;
 }
 
 /* On mouse-over, add a grey background color */
@@ -2304,4 +2345,75 @@ footer {
   height: 12px;
   border-radius: 50%;
   background: #05b4cd;
+}
+
+.vote__body__right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 0 0 50%;
+  max-width: 403px;
+  .title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 110%;
+    color: var(--black);
+    margin: 0px 0px 40px 0px;
+    @media (max-width: 768px) {
+      font-size: 25px;
+      margin: 0px 0px 16px 0px;
+    }
+  }
+}
+.result_item {
+  width: 100%;
+  margin: 0px 0px 25px 0px;
+}
+.result_name {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 110%;
+  color: var(--black);
+  margin: 0px 0px 5px 0px;
+}
+
+.result_level {
+  display: flex;
+  align-items: center;
+  .percent_info {
+    display: flex;
+    align-items: center;
+  }
+  @media (max-width: 390px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .range {
+    height: 4px;
+    background-color: var(--blue);
+    border-radius: 8px;
+    margin: 0px 8px 0px 0px;
+    max-width: 165px;
+    @media (max-width: 390px) {
+      margin: 0px 0px 8px 0px;
+    }
+  }
+  .percent {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 130%;
+    color: var(--black);
+    margin: 0px 8px 0px 0px;
+  }
+  .num_of_answers {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 130%;
+    color: #8e8e93;
+    white-space: nowrap;
+  }
 }
