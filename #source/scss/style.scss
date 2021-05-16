@@ -887,11 +887,14 @@ h6 {
     .title {
       font-style: normal;
       font-weight: bold;
-      font-size: 24px;
-      line-height: 29px;
+      font-size: 22px;
+      line-height: 26px;
       letter-spacing: 0.38px;
       color: var(--black);
-      margin: 0px 0px 28px 0px;
+      margin: 0px 0px 8px 0px;
+      overflow: hidden;
+      max-height: 54px;
+      min-height: 54px;
       @media (max-width: 500px) {
         font-size: 19px;
         margin: 0px 0px 15px 0px;
@@ -1920,6 +1923,10 @@ footer {
   padding: 0px 0px 10px 0px;
   position: relative;
   z-index: 2;
+  transition: all ease 0.3s;
+  &:hover {
+    transform: translateY(-9px);
+  }
 }
 .contacts_item_head {
   background: #f2f2f7;
